@@ -22,6 +22,8 @@ jobs:
         with:
           node-version: '11.x'
 
+      - run: npm ci
+
       - run: npm test -- --watchAll=false
 
       - run: npm run build
