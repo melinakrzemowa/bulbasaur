@@ -17,15 +17,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      - name: 📂 Deploy files
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        with:
-          server: melinakrzemowa.pl
-          username: deploy@melinakrzemowa.pl
-          password: ${{ secrets.ftp_password }}
-          exclude: .git*
-            - .git*/**
-            -  **/.git*/**
-            - node_modules/**
-            - node_modules/**/*
-            - .env
+      # - name: 📂 Deploy files
+      #   uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      #   with:
+      #     server: melinakrzemowa.pl
+      #     username: deploy@melinakrzemowa.pl
+      #     password: ${{ secrets.ftp_password }}
+      #     exclude: .git*
+      #       - .git*/**
+      #       -  **/.git*/**
+      #       - node_modules/**
+      #       - node_modules/**/*
+      #       - .env
